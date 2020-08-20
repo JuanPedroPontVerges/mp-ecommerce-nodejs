@@ -19,4 +19,6 @@ app.use(express.static('assets'));
  
 app.use('/assets', express.static(__dirname + '/assets'));
  
-app.listen(port);
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
+});
